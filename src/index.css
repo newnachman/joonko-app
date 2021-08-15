@@ -1,13 +1,104 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Mulish', sans-serif;
+  color: #010A60;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.container {
+  margin: auto;
+  width: 72%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: stretch;
+  height: 100vh;
+  justify-content: space-around;
+}
+
+h1 {
+  letter-spacing: 0px;
+  color: #010A60;
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+h3 {
+  margin: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+
+.main-content {
+  width: 50%;
+  align-self: center;
+}
+
+.form-lead {
+  background: #FFFFFF;
+  box-shadow: 0px 3px 16px #00000029;
+  text-align: center;
+  width: 30%;
+  align-self: center;
+}
+
+button {
+  background: #FFA52E 0% 0% no-repeat padding-box;
+  border-radius: 50px;
+  text-align: center;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  cursor: pointer;
+  padding: 15px 17px;
+  border: none;
+  outline: none;
+  font: 18px 'Mulish', sans-serif;
+  margin: 20px auto;
+}
+
+.input-wrapper {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.input-wrapper.checkbox-wrp {
+  text-align: left;
+
+}
+
+.input-wrapper input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  text-align: left;
+  font: 18px 'Mulish', sans-serif;
+  letter-spacing: 0px;
+  color: #707070;
+}
+
+.input-wrapper.checkbox-wrp input {
+  width: unset;
+}
+
+.input-wrapper.checkbox-wrp label {
+  margin-left: 5px;
+}
+
+ul {
+  margin: 0;
+  padding: 0 20px;
+}
+
+.not-valid {
+  color: #ED6982;
 }
