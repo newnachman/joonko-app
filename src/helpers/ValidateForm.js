@@ -2,9 +2,12 @@
 
 
 export const validatePhone = (input) => {
-  // valisa
-  var phoneNumber = /^\d{10}$/;
-  if(input.value.match(phoneNumber))
+  let emptyField = validateNotEmpty(input);
+  if (emptyField.status === false) {
+    return emptyField;
+  }
+  let phoneNumber = /^\d{10}$/;
+  if(input.match(phoneNumber))
   {
     return {status: true, text: ""}
   } else {
@@ -13,8 +16,12 @@ export const validatePhone = (input) => {
 }
 
 export const validateMail = (input) => {
+  let emptyField = validateNotEmpty(input);
+  if (emptyField.status === false) {
+    return emptyField;
+  }
   let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-  if(input.value.match(mailFormat))
+  if(input.match(mailFormat))
   {
     return {status: true, text: ""}
   } else {

@@ -70,9 +70,16 @@ button {
   margin: 20px auto;
 }
 
-.input-wrapper.checkbox-wrp {
+.input-wrapper label{
+  display: block;
   text-align: left;
+  color: #ED6982;
+}
 
+.input-wrapper.checkbox-wrp label{
+  display: inline;
+  text-align: left;
+  color: #010A60;
 }
 
 .input-wrapper input {
@@ -99,6 +106,24 @@ ul {
   padding: 0 20px;
 }
 
-.not-valid {
+.input-wrapper.checkbox-wrp .not-valid {
   color: #ED6982;
+}
+
+@media screen and (max-width: 900px){
+  .container {
+    width: 90%;
+    display: block;
+    flex-direction:unset;
+    flex-wrap:unset;
+  }
+  .main-content {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .form-lead {
+    width: 100%;
+    align-self: center;
+} 
 }
